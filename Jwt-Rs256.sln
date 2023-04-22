@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jwt-Rs256", "WebApi\Jwt-Rs256.csproj", "{E6999C99-72CE-4E63-8736-0B058B3728BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metika.Security", "Security\Metika.Security.csproj", "{D330A762-6477-4523-8870-D4C6A3E82637}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6999C99-72CE-4E63-8736-0B058B3728BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6999C99-72CE-4E63-8736-0B058B3728BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6999C99-72CE-4E63-8736-0B058B3728BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6999C99-72CE-4E63-8736-0B058B3728BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D330A762-6477-4523-8870-D4C6A3E82637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D330A762-6477-4523-8870-D4C6A3E82637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D330A762-6477-4523-8870-D4C6A3E82637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D330A762-6477-4523-8870-D4C6A3E82637}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
