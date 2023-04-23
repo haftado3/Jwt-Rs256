@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jwt-Rs256", "WebApi\Jwt-Rs2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metika.Security", "Security\Metika.Security.csproj", "{D330A762-6477-4523-8870-D4C6A3E82637}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metika.Identity", "Metika.Identity\Metika.Identity.csproj", "{6D716782-C1C0-4F65-A33C-3A7E3DEDB4E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{D330A762-6477-4523-8870-D4C6A3E82637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D330A762-6477-4523-8870-D4C6A3E82637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D330A762-6477-4523-8870-D4C6A3E82637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D716782-C1C0-4F65-A33C-3A7E3DEDB4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D716782-C1C0-4F65-A33C-3A7E3DEDB4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D716782-C1C0-4F65-A33C-3A7E3DEDB4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D716782-C1C0-4F65-A33C-3A7E3DEDB4E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA3D8AE5-A75C-4B75-A163-97EC463B7B59}
 	EndGlobalSection
 EndGlobal
