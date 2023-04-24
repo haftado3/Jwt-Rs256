@@ -1,4 +1,9 @@
+using Metika.Identity.Entities;
+
 namespace WebApi.Controllers;
+
+using Metika.Identity.Abstraction;
+using Metika.Identity.Services;
 using Metika.Security.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,20 +12,13 @@ using System.Threading.Tasks;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController : ControllerBase
+public class UserController : BaseUserController<User,Role>
 {
-    private readonly IJwtService _jwtService;
+    private readonly IUserService<User, Role> _userService;
 
-    public UserController(IJwtService jwtService)
+    public UserController(IUserService<User, Role> userService) : base(userService)
     {
-        _jwtService = jwtService;
-    }
-
-    [HttpGet("CreateToken")]
-    public async Task<IActionResult> CreateToken()
-    {
-        var token = await _jwtService.Generate(new List<Claim>());
-        return Ok(token);
+        _userService = userService;
     }
     [Authorize]
     [HttpGet("Validate")]

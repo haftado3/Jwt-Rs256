@@ -1,4 +1,7 @@
-GET https://localhost:7079/api/User/CreateToken
+POST https://localhost:7079/api/User/Login
+Accept: application/json
+###
+POST https://localhost:7079/api/User/Register
 Accept: application/json
 ###
 GET https://localhost:7079/api/User/Validate

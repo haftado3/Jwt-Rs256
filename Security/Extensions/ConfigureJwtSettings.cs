@@ -1,4 +1,4 @@
-namespace Metika.Security.Extensions;
+ namespace Metika.Security.Extensions;
 
 using Metika.Security.Common.Settings;
 using Metika.Security.Interfaces;

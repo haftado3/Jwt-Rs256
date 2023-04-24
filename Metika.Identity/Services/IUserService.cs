@@ -1,8 +1,9 @@
-﻿using Metika.Identity.Model;
+﻿using Metika.Identity.Entities;
+using Metika.Identity.Model;
 
 namespace Metika.Identity.Services
 {
-    public interface IUserService
+    public interface IUserService<TUser, TRole> where TUser : User where TRole : Role
     {
         Task<string> LoginWithPassword(LoginWithPasswordRequestDto request);
         Task<string> LoginWithVerification(LoginWithVerificationRequestDto request);
