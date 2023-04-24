@@ -15,31 +15,25 @@ namespace Metika.Identity.Context
         {
             base.OnModelCreating(builder);
             builder.HasDefaultSchema("Identity");
-            builder.Entity<IdentityUser>(entity =>
-            {
-                entity.ToTable(name: "User");
-            });
-            builder.Entity<IdentityRole>(entity =>
-            {
-                entity.ToTable(name: "Role");
-            });
-            builder.Entity<IdentityUserRole<string>>(entity =>
+            builder.Entity<User>().ToTable("Users");
+            builder.Entity<Role>().ToTable("Roles");
+            builder.Entity<IdentityUserRole<long>>(entity =>
             {
                 entity.ToTable("UserRoles");
             });
-            builder.Entity<IdentityUserClaim<string>>(entity =>
+            builder.Entity<IdentityUserClaim<long>>(entity =>
             {
                 entity.ToTable("UserClaims");
             });
-            builder.Entity<IdentityUserLogin<string>>(entity =>
+            builder.Entity<IdentityUserLogin<long>>(entity =>
             {
                 entity.ToTable("UserLogins");
             });
-            builder.Entity<IdentityRoleClaim<string>>(entity =>
+            builder.Entity<IdentityRoleClaim<long>>(entity =>
             {
                 entity.ToTable("RoleClaims");
             });
-            builder.Entity<IdentityUserToken<string>>(entity =>
+            builder.Entity<IdentityUserToken<long>>(entity =>
             {
                 entity.ToTable("UserTokens");
             });

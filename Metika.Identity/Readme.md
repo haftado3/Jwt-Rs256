@@ -80,3 +80,10 @@ public class UserController : BaseUserController<User,Role>
 ```
 
 7. adding migration to database 
+```
+dotnet ef migrations add InitialMigration
+```
+8. update database
+```
+dotnet ef database update
+```
